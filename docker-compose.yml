@@ -1,0 +1,28 @@
+version: "3"
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: codepry
+      MYSQL_USER: appuser
+      MYSQL_PASSWORD: password
+    ports:
+      - "3307:3306"
+  app:
+    build: .
+    volumes:
+      - ".:/home/app"
+    ports:
+      - "3031:3031"
+    depends_on:
+      - db
+    links:
+      - db
+    environment:
+      DB_USER: root
+      DB_NAME: codepry
+      DB_PASSWORD: password
+      DB_HOST: db
+
