@@ -1,9 +1,9 @@
 # RAILS API DOCKER
 
-This Rails API app inside of Docker  and also it has some make command support. 
+Rails API inside of Docker including  make command support. 
 
 
-To build the run the container, the primary requirement is to have Docker in the machine. 
+The primary requirement is to have Docker in the machine. 
 
 To begin with the project
 
@@ -22,5 +22,6 @@ What ?
  * ruby 2.4
  * mysql 5.7 and so on. 
  
+
  
  
