@@ -1,24 +1,26 @@
-# README
+# RAILS API DOCKER
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This Rails API app inside of Docker  and also it has some make command support. 
 
-Things you may want to cover:
 
-* Ruby version
+To build the run the container, the primary requirement is to have Docker in the machine. 
 
-* System dependencies
+To begin with the project
 
-* Configuration
+* make build
 
-* Database creation
+* make up
 
-* Database initialization
+* make shell 
 
-* How to run the test suite
+`make build` is for building the the container with all initial commands and related stuffs.
+`make up` will make your app running inside of docker. 
+`make shell` will give you the shell interface in the terminal. 
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+What ?
+ * ubunty 16.04
+ * ruby 2.4
+ * mysql 5.7 and so on. 
+ 
+ 
+ 
